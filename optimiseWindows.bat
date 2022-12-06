@@ -2,7 +2,7 @@
 :start
 set mm=
 set /p unverum=Welcome to the Street Fighter V Optimiser! Would you like to use the a mod manager such as PMM or FMM for the pak mods? (Y/N):
-if not '%mm%'=='' set mm=%mm:0,1%
+if not '%mm%'=='' set mm=%mm:~0,1%
 if '%mm%'=='Y' goto uyes
 if '%mm%'=='y' goto uyes
 if '%mm%'=='yes' goto uyes
